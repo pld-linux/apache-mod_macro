@@ -11,7 +11,7 @@ Source0:	http://www.cri.ensmp.fr/~coelho/mod_macro/mod_%{mod_name}-%{version}.ta
 # Source0-md5:	c79c299f650b35292d3b71da19e42e45
 URL:		http://www.cri.ensmp.fr/~coelho/mod_macro/
 BuildRequires:	apache-devel >= 2.0
-Requires:	apache
+Requires:	apache(modules-api) = %apache_modules_api
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_pkglibdir	%(%{apxs} -q LIBEXECDIR 2>/dev/null)
