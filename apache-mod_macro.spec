@@ -4,7 +4,7 @@ Summary:	Apache module to allow macros in apache config files
 Summary(pl):	Modu³ do apache pozwalaj±cy u¿ywaæ makr w konfiguracji
 Name:		apache-mod_%{mod_name}
 Version:	1.1.6
-Release:	0.1
+Release:	1
 License:	Apache
 Group:		Networking/Daemons
 Source0:	http://www.cri.ensmp.fr/~coelho/mod_macro/mod_%{mod_name}-%{version}.tar.bz2
@@ -31,7 +31,7 @@ Modu³ do apache pozwalaj±cy u¿ywaæ makr w plikach konfiguracyjnych.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_pkglibdir}
+install -d $RPM_BUILD_ROOT{%{_pkglibdir},%{_sysconfdir}/httpd.conf}
 
 install .libs/mod_%{mod_name}.so $RPM_BUILD_ROOT%{_pkglibdir}
 echo 'LoadModule %{mod_name}_module modules/mod_%{mod_name}.so' > \
