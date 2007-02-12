@@ -1,7 +1,7 @@
 %define		mod_name	macro
 %define 	apxs		/usr/sbin/apxs
 Summary:	Apache module to allow macros in apache config files
-Summary(pl):	Modu³ do apache pozwalaj±cy u¿ywaæ makr w konfiguracji
+Summary(pl.UTF-8):   ModuÅ‚ do apache pozwalajÄ…cy uÅ¼ywaÄ‡ makr w konfiguracji
 Name:		apache-mod_%{mod_name}
 Version:	1.1.8
 Release:	1
@@ -21,8 +21,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Apache module to allow macros in apache config files.
 
-%description -l pl
-Modu³ do apache pozwalaj±cy u¿ywaæ makr w plikach konfiguracyjnych.
+%description -l pl.UTF-8
+ModuÅ‚ do apache pozwalajÄ…cy uÅ¼ywaÄ‡ makr w plikach konfiguracyjnych.
 
 %prep
 %setup -q -n mod_%{mod_name}-%{version}
