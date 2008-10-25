@@ -6,7 +6,7 @@ Name:		apache-mod_%{mod_name}
 Version:	1.1.10
 Release:	1
 License:	Apache
-Group:		Networking/Daemons
+Group:		Networking/Daemons/HTTP
 Source0:	http://www.cri.ensmp.fr/~coelho/mod_macro/mod_%{mod_name}-%{version}.tar.bz2
 # Source0-md5:	ebc44eea3e197a38c93d9deb0afcb8ff
 URL:		http://www.cri.ensmp.fr/~coelho/mod_macro/
