@@ -3,12 +3,12 @@
 Summary:	Apache module to allow macros in apache config files
 Summary(pl.UTF-8):	Moduł do apache pozwalający używać makr w konfiguracji
 Name:		apache-mod_%{mod_name}
-Version:	1.1.10
-Release:	2
+Version:	1.1.11
+Release:	1
 License:	Apache
 Group:		Networking/Daemons/HTTP
 Source0:	http://www.cri.ensmp.fr/~coelho/mod_macro/mod_%{mod_name}-%{version}.tar.bz2
-# Source0-md5:	ebc44eea3e197a38c93d9deb0afcb8ff
+# Source0-md5:	9ade3977c23ec566e5bcd6cd99145a9c
 URL:		http://www.cri.ensmp.fr/~coelho/mod_macro/
 BuildRequires:	apache-devel >= 2.0
 BuildRequires:	rpmbuild(macros) >= 1.268
