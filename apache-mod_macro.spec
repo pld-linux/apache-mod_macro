@@ -1,16 +1,16 @@
 %define		mod_name	macro
-%define 	apxs		/usr/sbin/apxs
+%define		apxs		/usr/sbin/apxs
 Summary:	Apache module to allow macros in apache config files
 Summary(pl.UTF-8):	Moduł do apache pozwalający używać makr w konfiguracji
 Name:		apache-mod_%{mod_name}
-Version:	1.1.11
+Version:	1.2.1
 Release:	1
 License:	Apache
 Group:		Networking/Daemons/HTTP
-Source0:	http://www.cri.ensmp.fr/~coelho/mod_macro/mod_%{mod_name}-%{version}.tar.bz2
-# Source0-md5:	9ade3977c23ec566e5bcd6cd99145a9c
+Source0:	http://www.cri.ensmp.fr/~coelho/mod_macro/mod_%{mod_name}-%{version}.tar.gz
+# Source0-md5:	d57f45c146a47818fb1ad346c2e4ce68
 URL:		http://www.cri.ensmp.fr/~coelho/mod_macro/
-BuildRequires:	apache-devel >= 2.0
+BuildRequires:	apache-devel >= 2.4
 BuildRequires:	rpmbuild(macros) >= 1.268
 Requires:	apache(modules-api) = %apache_modules_api
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
